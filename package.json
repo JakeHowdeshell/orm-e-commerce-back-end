@@ -1,5 +1,5 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "orm-e-commerce-back-end",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,7 +14,7 @@
     "url": "git@github.com:JakeHowdeshell/orm-e-commerce-back-end.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jake Howdeshell",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.3"
