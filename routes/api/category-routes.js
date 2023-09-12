@@ -44,9 +44,9 @@ router.post('/', async (req, res) => {
   }
 });
 // Ask question regarding return result?
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   try{
-    const oldCategorieData = Category.update(req.body, {
+    const oldCategorieData = await Category.update(req.body, {
     where: {
       id: req.params.id,
     },
