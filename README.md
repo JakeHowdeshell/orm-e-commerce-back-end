@@ -1,67 +1,65 @@
 # ORM E-commerce Back End 
 
-## User Story
+## Description
 
 AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies
 
-## Acceptance Criteria
-
 GIVEN a functional Express.js API
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
+THEN I am able to connect to a database using Sequelize 
+
+This was achieved by uploading this information to a .env file and linking that file to the connection.js file.
+
 WHEN I enter schema and seed commands
-THEN a development database is created and is seeded with test data
+THEN a development database is created and is seeded with test data 
+
+Was able to achieve this by entering into mysql and typing 'SOURCE db/schema.sql' and then on an integrated terminal typing 'node seeds/index.js' as the seeded data was defined in a javascript file.
+
 WHEN I enter the command to invoke the application
-THEN my server is started and the Sequelize models are synced to the MySQL database
+THEN my server is started and the Sequelize models are synced to the MySQL database 
+
+This was achieved by installing all of the packages and making sure the mysql data from the .env file was accurate.
+
 WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-THEN the data for each of these routes is displayed in a formatted JSON
+THEN the data for each of these routes is displayed in a formatted JSON 
+
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
-This Challenge is graded based on the following criteria:
+This was achived by writing async functions for each method on all three routes that displayed the returned information as json.
 
-## Deliverables: 10%
-Your GitHub repository containing your application code.
-## Walkthrough Video: 37%
-A walkthrough video that demonstrates the functionality of the e-commerce back end must be submitted, and a link to the video should be included in your README file.
+## Table of Contents
 
-The walkthrough video must show all of the technical acceptance criteria being met.
+- [Installation](#installation)
 
-The walkthrough video must demonstrate how to create the schema from the MySQL shell.
+- [Usage](#usage)
 
-The walkthrough video must demonstrate how to seed the database from the command line.
+- [Questions](#questions)
 
-The walkthrough video must demonstrate how to start the application’s server.
+## Installation
 
-The walkthrough video must demonstrate GET routes for all categories, all products, and all tags being tested in Insomnia Core.
+- Step 1: The user will need to have [Node.js](https://nodejs.org/en/download) installed on their PC or use the link provided to install it.
 
-The walkthrough video must demonstrate GET routes for a single category, a single product, and a single tag being tested in Insomnia Core.
+- Step 2: Install mysql on the PC through the Homebrew package manager by typing 'brew install mysql' into the terminal. Additional instructions can be found by following this [link](https://coding-boot-camp.github.io/full-stack/mysql/mysql-installation-guide).
 
-The walkthrough video must demonstrate POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia Core.
+- Step 3: Before running the program the user will need to install the mysql2, dotenv, express, & sequelize packages by typing 'npm install' into the terminal integrated to the location of the folder holding the program, as they are already populated in package.json.
 
-## Technical Acceptance Criteria: 40%
-Satisfies all of the preceding acceptance criteria plus the following:
+- Step 4: The user will need to create a .env file to store the name of the database as well as their mysql username and password.
 
-Uses the MySQL2Links to an external site. and SequelizeLinks to an external site. packages to connect to a MySQL database.
+- Step 5: Using mysql run 'SOURCE schema.sql' to create the database and in the integrated terminal run 'node seeds/index.js' to seed the newly crested database.
 
-Uses the dotenv packageLinks to an external site. to use environment variables to store sensitive data, like a user’s MySQL username, password, and database name.
+- Step 6: The user will run the program by following the example provided in the [Usage](#usage) section.
 
-Syncs Sequelize models to a MySQL database on the server start.
+## Usage
 
-Includes column definitions for all four models outlined in the Challenge instructions.
+Video Example: https://watch.screencastify.com/v/jJBuckNFhge6ajsiGRss
 
-Includes model associations outlined in the Challenge instructions.
+![Screenshot](images/Screenshot.png)
 
-## Repository Quality: 13%
-Repository has a unique name.
+## Questions
 
-Repository follows best practices for file structure and naming conventions.
+Regarding any questions please check out my Github profile [JakeHowdeshell](https://github.com/JakeHowdeshell/node.js-readme-generator/tree/main).
 
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains a high-quality README with description and a link to a walkthrough video.
-
+Or send me an [email](mailto:Jakehowdy@gmail.com).
